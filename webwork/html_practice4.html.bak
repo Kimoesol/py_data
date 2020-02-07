@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+<style type="text/css">
+	div > span {
+		color:red;
+	}
+
+	.usr{
+		text-align:right;
+	}
+
+	.bot{
+		text-align:left;
+		width:200px;
+	}
+
+	span{
+		overflow:hidden;
+		background-color:#ffff33;
+	}
+</style>
+ </head>
+ <body>
+  <h1>대화창</h1>
+   <div class="usr">
+		<span>Hi hello</span>
+   </div>
+
+   <div class="bot">
+		<span>I am a bot</span>
+   </div>
+
+ </body>
+</html>
