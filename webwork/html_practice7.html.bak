@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+	<script>
+		var i=10
+		//선언적함수
+		function display(name){
+			window.alert(this);
+				window.document.write("<h1>이름:"+name+"</h1>");
+				window.document.write("<h1>이름:"+city+"</h1>");
+		}
+
+		function display(name,city,age){
+			for(var arg in arguments){
+				document.write("<h1>arg:"+arguments[arg]);
+				document.write(name);
+			}//for
+		}
+
+		function myfunc(){
+			function display(){
+			}
+		}
+		
+		//호출부
+		display("홍길동","서울시",24);
+	</script>
+ </head>
+ <body>
+  
+ </body>
+</html>
