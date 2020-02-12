@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script type="text/javascript">
+	var xml;
+	$(document).ready(function(){
+		$.ajax({
+			type:"GET",
+			url:"test.xml",
+			dataType:"xml",
+			success:xmlParser,
+			error:errProcess
+		});
+	});
+
+	function xmlParser(data){
+		document.write(data);
+	}
+
+	function errProcess(err){
+		window.alert("error");
+	}
+
+	//loading XML file and parsing to .main div.
+
+
+</script>
+
+ </head>
+ <body>
+  <div data-role="page">
+  <div data-role="header" data-theme="a">
+	<h1>Employees</h1>
+  </div>
+  <!-- /header -->
+  <div data-role="content">
+	<div class="content-primary">
+	<ul id="list" data-role="listview" data-theme="a" data-filter="true">
+	<li id="load">Loading Data...</li>
+	</ul>
+	<ul id="results" data-role="listview" data-theme="a">
+	</ul>
+	</div>
+	<!-- /contentprimary -->
+	</div>
+	<!-- /content -->
+	<div data-role="footer" data-theme="a">
+	<div data-role="navbar">
+	<p align='center'>::: Footer :::</p>
+	</div>
+	<!-- /navbar -->
+	</div>
+	<!-- /footer -->
+	</div>
+	<!-- /page -->
+ </body>
+</html>
