@@ -1,0 +1,2 @@
+model_checkpoint_path: "c:/py_data/tensorflow/cnn_test/cnn_session"
+all_model_checkpoint_paths: "c:/py_data/tensorflow/cnn_test/cnn_session"
